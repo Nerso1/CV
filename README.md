@@ -25,7 +25,7 @@ Built with vanilla HTML, CSS, and JavaScript - no frameworks.
 | Dark mode | Toggle + OS preference + localStorage |
 | Print | Always light mode, sidebar desaturated |
 
-# FOUC prevention:
+### FOUC prevention:
 When the page loads, the browser briefly renders content before JavaScript applies translations - this is known as a Flash of Untranslated Content (FOUC). To prevent this, an inline <script> is placed as the very first element inside <head>, before any stylesheets or external scripts. Since inline scripts block HTML parsing and execute synchronously, the language is applied to the <html> element before the browser renders a single pixel. The script reads the language from the URL parameter (?lang=pl) or localStorage, sets document.documentElement.lang, and exits - keeping the critical path as short as possible.
 
 
