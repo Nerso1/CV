@@ -1,0 +1,15 @@
+# Internal folders
+.*/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+*.suo
+*.user
+
+# Temporary files
+*.tmp
+*.log
