@@ -1,0 +1,51 @@
+/* === CV WRAPPER — CSS Grid === */
+.cv-wrapper {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  grid-template-areas:
+    "sidebar main"
+    "footer  footer";
+  max-width: var(--cv-max-width);
+  margin: var(--space-xl) auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+/* === GRID AREAS === */
+.cv-sidebar { grid-area: sidebar; }
+.cv-main    { grid-area: main; }
+.cv-footer  { grid-area: footer; }
+
+/* === SIDEBAR === */
+.cv-sidebar {
+  background-color: var(--color-surface-alt);
+  color: var(--color-text-on-alt);
+  padding: var(--space-lg);
+}
+
+/* === MAIN === */
+.cv-main {
+  background-color: var(--color-surface);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* === FOOTER === */
+.cv-footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-md) var(--space-lg);
+}
+
+/* === CONTROLS (fixed — lang + dark mode toggle) === */
+.controls {
+  position: fixed;
+  top: var(--space-md);
+  right: var(--space-md);
+  display: flex;
+  gap: var(--space-sm);
+  z-index: 100;
+}
