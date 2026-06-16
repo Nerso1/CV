@@ -1,0 +1,35 @@
+/* === DARK MODE — explicit toggle === */
+:root[data-theme="dark"] {
+  --color-page:         #0a0a14;
+  --color-surface:      #1a1a2e;
+  --color-surface-alt:  #12122a;
+  --color-text:         #e4e8f0;
+  --color-text-muted:   #8892aa;
+  --color-text-on-alt:  #caf0f8;
+  --color-heading:      #90e0ef;
+  --color-accent:       #00b4d8;
+  --color-accent-hover: #caf0f8;
+  --color-border:       #2a2a4a;
+  --color-border-alt:   #3a4a7a;
+  --shadow-card:  0 2px 8px rgba(0, 0, 0, 0.40);
+  --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.60);
+}
+
+/* === DARK MODE — OS preference (gdy brak ręcznego wyboru) === */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-page:         #0a0a14;
+    --color-surface:      #1a1a2e;
+    --color-surface-alt:  #12122a;
+    --color-text:         #e4e8f0;
+    --color-text-muted:   #8892aa;
+    --color-text-on-alt:  #caf0f8;
+    --color-heading:      #90e0ef;
+    --color-accent:       #00b4d8;
+    --color-accent-hover: #caf0f8;
+    --color-border:       #2a2a4a;
+    --color-border-alt:   #3a4a7a;
+    --shadow-card:  0 2px 8px rgba(0, 0, 0, 0.40);
+    --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.60);
+  }
+}

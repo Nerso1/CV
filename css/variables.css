@@ -1,0 +1,47 @@
+:root {
+  /* === SURFACES === */
+  --color-page:         #f0f4f8;
+  --color-surface:      #ffffff;
+  --color-surface-alt:  #0d1b6e;   /* sidebar */
+
+  /* === TEXT === */
+  --color-text:         #1a1a2e;
+  --color-text-muted:   #5a6480;
+  --color-text-on-alt:  #ffffff;   /* tekst na ciemnym sidebarze */
+  --color-heading:      #0d1b6e;
+
+  /* === ACCENT === */
+  --color-accent:       #0a6eb4;
+  --color-accent-hover: #00b4d8;
+
+  /* === BORDERS === */
+  --color-border:       #d1dce8;
+  --color-border-alt:   #1e3a7a;   /* obramowania na ciemnym tle */
+
+  /* === EFFECTS === */
+  --shadow-card:  0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.14);
+
+  /* === SPACING === */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+  --space-2xl: 64px;
+
+  /* === TYPOGRAPHY === */
+  --font-body:    "Noto Serif", serif;
+  --font-heading: "Inter", sans-serif;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.25rem;
+  --text-xl:   1.75rem;
+  --text-2xl:  2.5rem;
+
+  /* === LAYOUT === */
+  --radius:        8px;
+  --radius-sm:     4px;
+  --sidebar-width: 260px;
+  --cv-max-width:  1000px;
+}
