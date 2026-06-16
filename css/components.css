@@ -101,3 +101,56 @@
   color: var(--color-accent-hover);
 }
 
+/* === TABLE - PERSONAL DETAILS (sidebar) === */
+.table-details {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.table-details th,
+.table-details td {
+  padding: var(--space-xs) 0;
+  color: var(--color-text-on-alt);
+  vertical-align: top;
+}
+
+.table-details th {
+  font-weight: 600;
+  white-space: nowrap;
+  padding-right: var(--space-sm);
+  opacity: 0.75;
+}
+
+/* === TABLE - CV (experience / education) === */
+.table-cv {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.table-cv thead th {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 2px solid var(--color-border);
+  padding: var(--space-xs) var(--space-sm);
+  text-align: left;
+}
+
+.table-cv tbody td {
+  padding: var(--space-sm);
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.table-cv tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table-cv tbody tr:hover td {
+  background-color: var(--color-page);
+}
