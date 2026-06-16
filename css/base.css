@@ -1,0 +1,71 @@
+/* === RESET === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === BODY === */
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  background-color: var(--color-page);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* === HEADINGS === */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+/* === LINKS === */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+/* === SKIP LINK (accessibility) === */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-surface);
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  z-index: 200;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: var(--space-md);
+}
+
+/* === FOUC PREVENTION === */
+/* CV is invisible until i18n.js applies translations and adds .i18n-ready */
+.cv-wrapper {
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.cv-wrapper.i18n-ready {
+  opacity: 1;
+}
