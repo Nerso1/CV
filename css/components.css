@@ -68,3 +68,36 @@
   padding-bottom: var(--space-xs);
   margin-bottom: var(--space-sm);
 }
+/* === CONTACT LIST === */
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text-on-alt);
+}
+
+.contact-list i {
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+  opacity: 0.75;
+}
+
+.contact-list a {
+  color: var(--color-text-on-alt);
+  word-break: break-all;
+}
+
+.contact-list a:hover,
+.contact-list a:focus {
+  color: var(--color-accent-hover);
+}
+
