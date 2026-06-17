@@ -42,5 +42,161 @@
   <link rel="stylesheet" href="css/print.css">
 </head>
 <body>
+
+  <a href="#main" class="skip-link" data-i18n="skip-link">Skip to content</a>
+
+  <div class="controls" role="toolbar" aria-label="Page controls">
+    <button class="btn-lang" id="btn-lang">PL | EN</button>
+    <button class="btn-darkmode" id="btn-darkmode" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <div class="cv-wrapper">
+
+    <aside class="cv-sidebar">
+
+      <figure class="cv-photo">
+        <img src="assets/photo.jpg" alt="Dominik Ciastoń" width="120" height="120">
+      </figure>
+
+      <div class="cv-identity">
+        <h1 class="cv-name">Dominik Ciastoń</h1>
+        <p class="cv-title" data-i18n="job-title">Junior .NET Developer</p>
+      </div>
+
+      <section class="sidebar-section" id="contact">
+        <h2 class="sidebar-heading" data-i18n="contact.title">Contact</h2>
+        <ul class="contact-list">
+          <li>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:dominik.ciaston@gmail.com">dominik.ciaston@gmail.com</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <a href="tel:+48723017866">+48 723 017 866</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Kraków, Poland</span>
+          </li>
+          <li>
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/Nerso1" rel="noopener noreferrer">github.com/Nerso1</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section" id="personal-details">
+        <h2 class="sidebar-heading" data-i18n="personal.title">Personal Details</h2>
+        <table class="table-details">
+          <tbody>
+            <tr>
+              <th scope="row" data-i18n="personal.dob">Date of birth</th>
+              <td>07.05.1995</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="sidebar-section" id="skills">
+        <h2 class="sidebar-heading" data-i18n="skills.title">Skills</h2>
+        <ul class="skills-list" aria-label="Technical skills">
+          <li class="skill-badge">C#</li>
+          <li class="skill-badge">SQL Server</li>
+          <li class="skill-badge">.NET</li>
+          <li class="skill-badge">WPF / WinForms</li>
+          <li class="skill-badge">ASP.NET</li>
+          <li class="skill-badge">Entity Framework</li>
+          <li class="skill-badge">Git</li>
+          <li class="skill-badge">GitHub / GitLab</li>
+        </ul>
+      </section>
+
+    </aside>
+
+    <main class="cv-main" id="main">
+
+      <section class="card" id="summary">
+        <h2 class="card-heading" data-i18n="summary.title">Professional Summary</h2>
+        <p data-i18n="summary.text">TODO: write in English</p>
+      </section>
+
+      <section class="card" id="experience">
+        <h2 class="card-heading" data-i18n="experience.title">Professional Experience</h2>
+        <table class="table-cv">
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="table.role">Role</th>
+              <th scope="col" data-i18n="table.company">Company</th>
+              <th scope="col" data-i18n="table.period">Period</th>
+              <th scope="col" data-i18n="table.description">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="exp.row1.role">Junior Developer</td>
+              <td>Comarch S.A.</td>
+              <td>10.2025 – <span data-i18n="present">present</span></td>
+              <td data-i18n="exp.row1.desc">TODO</td>
+            </tr>
+            <tr>
+              <td data-i18n="exp.row2.role">Technical Support Consultant</td>
+              <td>Comarch S.A.</td>
+              <td>10.2019 – 10.2025</td>
+              <td data-i18n="exp.row2.desc">TODO</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card" id="education">
+        <h2 class="card-heading" data-i18n="education.title">Education</h2>
+        <table class="table-cv">
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="edu.col.institution">Institution</th>
+              <th scope="col" data-i18n="edu.col.field">Field of study</th>
+              <th scope="col" data-i18n="table.period">Period</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="edu.row1.institution">TODO</td>
+              <td data-i18n="edu.row1.field">TODO</td>
+              <td>TODO</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card" id="portfolio">
+        <h2 class="card-heading" data-i18n="portfolio.title">Portfolio</h2>
+        <ul class="portfolio-list">
+          <li class="portfolio-item">
+            <a href="https://github.com/Nerso1" rel="noopener noreferrer">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <strong>TODO: nazwa projektu</strong>
+            </a>
+            <p data-i18n="portfolio.item1.desc">TODO</p>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="cv-footer">
+      <p data-i18n="rodo.text">
+        I consent to the processing of my personal data included in this CV
+        for the purposes of recruitment in accordance with the General Data
+        Protection Regulation (GDPR) of 27 April 2016.
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/darkmode.js"></script>
+
 </body>
 </html>
