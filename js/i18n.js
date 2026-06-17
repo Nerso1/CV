@@ -24,7 +24,9 @@ const translations = {
     "edu.row1.institution":  "AGH University of Science and Technology",
     "edu.row1.field":        "IT Education",
     "portfolio.title":       "Portfolio",
-    "portfolio.item1.desc":  "https://github.com/Nerso1/CV",
+    "portfolio.item1.desc":  "Lightweight utility for managing Comarch ERP XL installations",
+    "portfolio.item2.desc":  "Program helps to organize old files in folder containing a lot of files, for example your browser's Download folder",
+    "portfolio.item3.desc":  "A console application built with .NET 6.0 that creates dummy files with customizable properties for testing purposes",
     "rodo.text":             "I consent to the processing of my personal data included in this CV for the purposes of recruitment in accordance with the General Data Protection Regulation (GDPR) of 27 April 2016.",
   },
   pl: {
@@ -52,7 +54,9 @@ const translations = {
     "edu.row1.institution":  "AGH Akademia Górniczo-Hutnicza w Krakowie",
     "edu.row1.field":        "Edukacja informatyczna",
     "portfolio.title":       "Portfolio",
-    "portfolio.item1.desc":  "https://github.com/Nerso1/CV",
+    "portfolio.item1.desc":  "lekkie narzędzie do zarządzania instalacjami Comarch ERP XL.",
+    "portfolio.item2.desc":  "program pomaga uporządkować stare pliki w folderach zawierających wiele plików, na przykład w folderze Pobrane.",
+    "portfolio.item3.desc":  "Aplikacja konsolowa stworzona w środowisku .NET 6.0, która tworzy pliki fikcyjnych z konfigurowalnymi właściwościami w celach testowych",
     "rodo.text":             "Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w niniejszym CV dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. (RODO).",
   },
 };
