@@ -210,7 +210,8 @@
 
 /* === CONTROLS - BUTTONS === */
 .btn-lang,
-.btn-darkmode {
+.btn-darkmode,
+.btn-pdf {
   font-family: var(--font-heading);
   font-size: var(--text-sm);
   font-weight: 600;
@@ -227,7 +228,9 @@
 .btn-lang:hover,
 .btn-lang:focus,
 .btn-darkmode:hover,
-.btn-darkmode:focus {
+.btn-darkmode:focus,
+.btn-pdf:hover,
+.btn-pdf:focus {
   background-color: var(--color-page);
   border-color: var(--color-accent);
   outline: none;
