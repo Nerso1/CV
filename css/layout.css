@@ -49,3 +49,41 @@
   gap: var(--space-sm);
   z-index: 100;
 }
+
+/* === MOBILE === */
+@media (max-width: 700px) {
+  .cv-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sidebar"
+      "main"
+      "footer";
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .controls {
+    top: var(--space-sm);
+    right: var(--space-sm);
+  }
+
+  .table-cv thead {
+    display: none;
+  }
+
+  .table-cv tbody td {
+    display: block;
+    padding: var(--space-xs) var(--space-sm);
+    border-bottom: none;
+  }
+
+  .table-cv tbody tr {
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-sm) 0;
+    display: block;
+  }
+
+  .table-cv tbody tr:last-child {
+    border-bottom: none;
+  }
+}
