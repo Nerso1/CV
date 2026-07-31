@@ -66,7 +66,7 @@
     top: var(--space-sm);
     right: var(--space-sm);
   }
-
+git push --set-upstream origin feature/mobile
   .table-cv thead {
     display: none;
   }
