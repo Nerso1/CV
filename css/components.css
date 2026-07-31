@@ -156,6 +156,25 @@
 }
 
 /* === SKILLS === */
+.skill-group {
+  margin-bottom: var(--space-sm);
+}
+
+.skill-group:last-child {
+  margin-bottom: 0;
+}
+
+.skill-group-label {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-on-alt);
+  opacity: 0.55;
+  margin-bottom: var(--space-xs);
+}
+
 .skills-list {
   list-style: none;
   display: flex;
