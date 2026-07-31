@@ -156,6 +156,25 @@
 }
 
 /* === SKILLS === */
+.skill-group {
+  margin-bottom: var(--space-sm);
+}
+
+.skill-group:last-child {
+  margin-bottom: 0;
+}
+
+.skill-group-label {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-on-alt);
+  opacity: 0.55;
+  margin-bottom: var(--space-xs);
+}
+
 .skills-list {
   list-style: none;
   display: flex;
@@ -210,7 +229,8 @@
 
 /* === CONTROLS - BUTTONS === */
 .btn-lang,
-.btn-darkmode {
+.btn-darkmode,
+.btn-pdf {
   font-family: var(--font-heading);
   font-size: var(--text-sm);
   font-weight: 600;
@@ -227,7 +247,9 @@
 .btn-lang:hover,
 .btn-lang:focus,
 .btn-darkmode:hover,
-.btn-darkmode:focus {
+.btn-darkmode:focus,
+.btn-pdf:hover,
+.btn-pdf:focus {
   background-color: var(--color-page);
   border-color: var(--color-accent);
   outline: none;

@@ -1,4 +1,4 @@
-/* === CV WRAPPER — CSS Grid === */
+/* === CV WRAPPER - CSS Grid === */
 .cv-wrapper {
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
@@ -40,7 +40,7 @@
   padding: var(--space-md) var(--space-lg);
 }
 
-/* === CONTROLS (fixed — lang + dark mode toggle) === */
+/* === CONTROLS (fixed - lang + dark mode toggle) === */
 .controls {
   position: fixed;
   top: var(--space-md);

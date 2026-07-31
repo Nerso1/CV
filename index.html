@@ -50,6 +50,9 @@
     <button class="btn-darkmode" id="btn-darkmode" aria-label="Toggle dark mode">
       <i class="fa-solid fa-moon" aria-hidden="true"></i>
     </button>
+    <button class="btn-pdf" id="btn-pdf" aria-label="Export to PDF">
+      <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+    </button>
   </div>
 
   <div class="cv-wrapper">
@@ -101,16 +104,52 @@
 
       <section class="sidebar-section" id="skills">
         <h2 class="sidebar-heading" data-i18n="skills.title">Skills</h2>
-        <ul class="skills-list" aria-label="Technical skills">
-          <li class="skill-badge">C#</li>
-          <li class="skill-badge">SQL Server</li>
-          <li class="skill-badge">.NET</li>
-          <li class="skill-badge">WPF / WinForms</li>
-          <li class="skill-badge">ASP.NET</li>
-          <li class="skill-badge">Entity Framework</li>
-          <li class="skill-badge">Git</li>
-          <li class="skill-badge">GitHub / GitLab</li>
-        </ul>
+
+        <div class="skill-group">
+          <h3 class="skill-group-label" data-i18n="skills.backend">Backend</h3>
+          <ul class="skills-list">
+            <li class="skill-badge">C#</li>
+            <li class="skill-badge">.NET</li>
+            <li class="skill-badge">ASP.NET</li>
+            <li class="skill-badge">Entity Framework</li>
+            <li class="skill-badge">OData</li>
+            <li class="skill-badge">REST API</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-label" data-i18n="skills.tools">Tools</h3>
+          <ul class="skills-list">
+            <li class="skill-badge">Git</li>
+            <li class="skill-badge">GitHub / GitLab</li>
+            <li class="skill-badge">Vault</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-label" data-i18n="skills.db">Databases</h3>
+          <ul class="skills-list">
+            <li class="skill-badge">SQL Server</li>
+            <li class="skill-badge">T-SQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-label" data-i18n="skills.testing">Testing</h3>
+          <ul class="skills-list">
+            <li class="skill-badge">xUnit</li>
+            <li class="skill-badge">Moq</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-label" data-i18n="skills.desktop">Desktop</h3>
+          <ul class="skills-list">
+            <li class="skill-badge">WPF</li>
+            <li class="skill-badge">WinForms</li>
+          </ul>
+        </div>
+
       </section>
 
     </aside>
@@ -211,6 +250,7 @@
 
   <script src="js/i18n.js"></script>
   <script src="js/darkmode.js"></script>
+  <script src="js/print.js"></script>
 
 </body>
 </html>
