@@ -71,7 +71,7 @@
     content: none;
   }
 
-  details:not([open]) {
+  .card:has(details:not([open])) {
     display: none;
   }
 
