@@ -2,6 +2,7 @@
 
   :root,
   :root[data-theme="dark"] {
+    font-size: 13px;
     --color-page:        #f0f4f8;
     --color-surface:     #ffffff;
     --color-surface-alt: #0d1b6e;
