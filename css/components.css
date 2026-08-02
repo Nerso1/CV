@@ -283,6 +283,19 @@
   color: var(--color-text-muted);
 }
 
+.badge-wip {
+  display: inline-block;
+  font-size: var(--text-xs, 0.75rem);
+  font-family: var(--font-heading);
+  color: #92650a;
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: var(--radius-sm);
+  padding: 1px 6px;
+  vertical-align: middle;
+  margin-left: var(--space-xs);
+}
+
 /* === TRAININGS === */
 .trainings-summary {
   list-style: none;
