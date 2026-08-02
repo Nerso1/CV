@@ -256,6 +256,65 @@
   color: var(--color-text-muted);
 }
 
+/* === TRAININGS === */
+.trainings-summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: 0;
+  user-select: none;
+}
+
+.trainings-summary::-webkit-details-marker {
+  display: none;
+}
+
+.trainings-details[open] .trainings-summary {
+  margin-bottom: var(--space-md);
+}
+
+.trainings-chevron {
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.trainings-details[open] .trainings-chevron {
+  transform: rotate(90deg);
+}
+
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.cert-link i {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.cert-link:hover,
+.cert-link:focus {
+  color: var(--color-accent);
+}
+
+.cert-link:hover i,
+.cert-link:focus i {
+  color: var(--color-accent);
+}
+
+.training-year {
+  white-space: nowrap;
+  width: 4rem;
+}
+
 /* === CV FOOTER === */
 .cv-footer p {
   font-size: var(--text-sm);
