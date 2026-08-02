@@ -102,8 +102,8 @@
               <th scope="row" data-i18n="personal.languages">Languages</th>
               <td>
                 <ul class="lang-list">
-                  <li><span data-i18n="lang.english">English</span> – C1</li>
-                  <li><span data-i18n="lang.polish">Polish</span> – <span data-i18n="lang.polish.level">native</span></li>
+                  <li><span data-i18n="lang.english">English</span> - C1</li>
+                  <li><span data-i18n="lang.polish">Polish</span> - <span data-i18n="lang.polish.level">native</span></li>
                 </ul>
               </td>
             </tr>
@@ -192,17 +192,17 @@
         <table class="table-cv">
           <thead>
             <tr>
-              <th scope="col" data-i18n="table.role">Role</th>
-              <th scope="col" data-i18n="table.company">Company</th>
-              <th scope="col" data-i18n="table.period">Period</th>
+              <th scope="col" data-i18n="table.position">Position</th>
               <th scope="col" data-i18n="table.description">Description</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td data-i18n="exp.row1.role">Junior Developer</td>
-              <td>Comarch S.A.</td>
-              <td>10.2025 - <span data-i18n="present">present</span></td>
+              <td class="td-meta">
+                <span class="job-role" data-i18n="exp.row1.role">Junior Developer</span>
+                <span class="job-company">Comarch S.A.</span>
+                <span class="job-period">10.2025 - <span data-i18n="present">present</span></span>
+              </td>
               <td>
                 <ul class="desc-bullets">
                   <li data-i18n="exp.row1.desc.1"></li>
@@ -212,9 +212,11 @@
               </td>
             </tr>
             <tr>
-              <td data-i18n="exp.row2.role">Technical Support Consultant</td>
-              <td>Comarch S.A.</td>
-              <td>10.2019 - 10.2025</td>
+              <td class="td-meta">
+                <span class="job-role" data-i18n="exp.row2.role">Technical Support Consultant</span>
+                <span class="job-company">Comarch S.A.</span>
+                <span class="job-period">10.2019 - 10.2025</span>
+              </td>
               <td>
                 <ul class="desc-bullets">
                   <li data-i18n="exp.row2.desc.1"></li>
@@ -257,7 +259,97 @@
             </a>
             <p data-i18n="portfolio.item1.desc">Lightweight utility for managing Comarch ERP XL installations</p>
           </li>
+          <li class="portfolio-item">
+            <a href="https://github.com/Nerso1/MicroERP" rel="noopener noreferrer">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <strong>MicroERP</strong>
+            </a>
+            <span class="badge-wip" data-i18n="badge.wip">work in progress</span>
+            <p data-i18n="portfolio.item2.desc">Lightweight ERP system built with ASP.NET and Angular</p>
+          </li>
         </ul>
+      </section>
+
+      <section class="card" id="trainings">
+        <details class="trainings-details">
+          <summary class="card-heading trainings-summary">
+            <i class="fa-solid fa-chevron-right trainings-chevron" aria-hidden="true"></i>
+            <span data-i18n="trainings.title">Trainings &amp; Certificates</span>
+          </summary>
+          <table class="table-cv">
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="trainings.col.name">Training</th>
+                <th scope="col" data-i18n="trainings.col.year">Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="assets/certificates-scans/SQL-basics-2021.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    <span data-i18n="training.row1.name">Microsoft SQL Server - Transact-SQL Language (Basic)</span>
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                  </a>
+                </td>
+                <td class="training-year">2021</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="assets/certificates-scans/SQL-advanced-2022.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    <span data-i18n="training.row2.name">SQL - MS SQL Server Database Access Language (Advanced)</span>
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                  </a>
+                </td>
+                <td class="training-year">2022</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="assets/certificates-scans/SQL-optimalization-2023.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    <span data-i18n="training.row3.name">Microsoft SQL Server - Query Optimization and Performance Tuning</span>
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                  </a>
+                </td>
+                <td class="training-year">2023</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="assets/certificates-scans/dotnet-basics-2024.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    <span data-i18n="training.row4.name">.NET Programming (Basic Course)</span>
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                  </a>
+                </td>
+                <td class="training-year">2024</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="assets/certificates-scans/TDD-2025.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    <span data-i18n="training.row5.name">TDD, Clean Code and Refactoring (Java, C#, OOP)</span>
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                  </a>
+                </td>
+                <td class="training-year">2025</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="assets/certificates-scans/angular-2026.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    <span data-i18n="training.row6.name">Angular - Single Page Application Framework (Basic Course)</span>
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                  </a>
+                </td>
+                <td class="training-year">2026</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="assets/certificates-scans/dotnet-advanced-2026.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    <span data-i18n="training.row7.name">.NET Programming (Advanced Course)</span>
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                  </a>
+                </td>
+                <td class="training-year">2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
       </section>
 
     </main>

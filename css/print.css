@@ -2,6 +2,7 @@
 
   :root,
   :root[data-theme="dark"] {
+    font-size: 13px;
     --color-page:        #f0f4f8;
     --color-surface:     #ffffff;
     --color-surface-alt: #0d1b6e;
@@ -39,6 +40,8 @@
   .cv-sidebar .sidebar-heading,
   .cv-sidebar .cv-name,
   .cv-sidebar .cv-title,
+  .cv-sidebar .skill-group-label,
+  .cv-sidebar span,
   .cv-sidebar a,
   .cv-sidebar td,
   .cv-sidebar th {
@@ -61,6 +64,15 @@
     content: " (" attr(href) ")";
     font-size: var(--text-sm);
     color: #555;
+  }
+
+  .cv-sidebar a[href]::after,
+  .cert-link[href]::after {
+    content: none;
+  }
+
+  .card:has(details:not([open])) {
+    display: none;
   }
 
   .cv-footer {

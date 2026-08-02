@@ -191,6 +191,33 @@
   background-color: var(--color-page);
 }
 
+.table-cv .td-meta {
+  width: 28%;
+}
+
+@media (max-width: 700px) {
+  .table-cv .td-meta {
+    width: 100%;
+  }
+}
+
+.job-role {
+  display: block;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.job-company {
+  display: block;
+  color: var(--color-text-muted);
+}
+
+.job-period {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+}
+
 /* === SKILLS === */
 .skill-group {
   margin-bottom: var(--space-sm);
@@ -254,6 +281,78 @@
 .portfolio-item p {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
+}
+
+.badge-wip {
+  display: inline-block;
+  font-size: var(--text-xs, 0.75rem);
+  font-family: var(--font-heading);
+  color: #92650a;
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: var(--radius-sm);
+  padding: 1px 6px;
+  vertical-align: middle;
+  margin-left: var(--space-xs);
+}
+
+/* === TRAININGS === */
+.trainings-summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: 0;
+  user-select: none;
+}
+
+.trainings-summary::-webkit-details-marker {
+  display: none;
+}
+
+.trainings-details[open] .trainings-summary {
+  margin-bottom: var(--space-md);
+}
+
+.trainings-chevron {
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.trainings-details[open] .trainings-chevron {
+  transform: rotate(90deg);
+}
+
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.cert-link i {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.cert-link:hover,
+.cert-link:focus {
+  color: var(--color-accent);
+}
+
+.cert-link:hover i,
+.cert-link:focus i {
+  color: var(--color-accent);
+}
+
+.training-year {
+  white-space: nowrap;
+  width: 4rem;
 }
 
 /* === CV FOOTER === */
