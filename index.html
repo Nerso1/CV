@@ -101,8 +101,10 @@
             <tr>
               <th scope="row" data-i18n="personal.languages">Languages</th>
               <td>
-                <span data-i18n="lang.polish">Polish</span> - <span data-i18n="lang.polish.level">native</span><br>
-                <span data-i18n="lang.english">English</span> - C1
+                <ul class="lang-list">
+                  <li><span data-i18n="lang.english">English</span> – C1</li>
+                  <li><span data-i18n="lang.polish">Polish</span> – <span data-i18n="lang.polish.level">native</span></li>
+                </ul>
               </td>
             </tr>
           </tbody>
@@ -177,7 +179,12 @@
 
       <section class="card" id="summary">
         <h2 class="card-heading" data-i18n="summary.title">Professional Summary</h2>
-        <p data-i18n="summary.text"></p>
+        <p class="summary-lead" data-i18n="summary.lead"></p>
+        <ul class="summary-bullets">
+          <li data-i18n="summary.bullet1"></li>
+          <li data-i18n="summary.bullet2"></li>
+          <li data-i18n="summary.bullet3"></li>
+        </ul>
       </section>
 
       <section class="card" id="experience">
@@ -196,13 +203,25 @@
               <td data-i18n="exp.row1.role">Junior Developer</td>
               <td>Comarch S.A.</td>
               <td>10.2025 - <span data-i18n="present">present</span></td>
-              <td data-i18n="exp.row1.desc"></td>
+              <td>
+                <ul class="desc-bullets">
+                  <li data-i18n="exp.row1.desc.1"></li>
+                  <li data-i18n="exp.row1.desc.2"></li>
+                  <li data-i18n="exp.row1.desc.3"></li>
+                </ul>
+              </td>
             </tr>
             <tr>
               <td data-i18n="exp.row2.role">Technical Support Consultant</td>
               <td>Comarch S.A.</td>
               <td>10.2019 - 10.2025</td>
-              <td data-i18n="exp.row2.desc"></td>
+              <td>
+                <ul class="desc-bullets">
+                  <li data-i18n="exp.row2.desc.1"></li>
+                  <li data-i18n="exp.row2.desc.2"></li>
+                  <li data-i18n="exp.row2.desc.3"></li>
+                </ul>
+              </td>
             </tr>
           </tbody>
         </table>
