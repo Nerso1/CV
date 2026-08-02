@@ -73,6 +73,7 @@
 
   .table-cv tbody td {
     display: block;
+    width: 100%;
     padding: var(--space-xs) var(--space-sm);
     border-bottom: none;
   }

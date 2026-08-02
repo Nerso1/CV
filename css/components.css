@@ -195,6 +195,12 @@
   width: 28%;
 }
 
+@media (max-width: 700px) {
+  .table-cv .td-meta {
+    width: 100%;
+  }
+}
+
 .job-role {
   display: block;
   font-weight: 700;
