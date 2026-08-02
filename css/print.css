@@ -39,6 +39,8 @@
   .cv-sidebar .sidebar-heading,
   .cv-sidebar .cv-name,
   .cv-sidebar .cv-title,
+  .cv-sidebar .skill-group-label,
+  .cv-sidebar span,
   .cv-sidebar a,
   .cv-sidebar td,
   .cv-sidebar th {
@@ -61,6 +63,11 @@
     content: " (" attr(href) ")";
     font-size: var(--text-sm);
     color: #555;
+  }
+
+  .cv-sidebar a[href]::after,
+  .cert-link[href]::after {
+    content: none;
   }
 
   .cv-footer {
