@@ -191,6 +191,28 @@
   background-color: var(--color-page);
 }
 
+.table-cv .td-meta {
+  width: 30%;
+  white-space: nowrap;
+}
+
+.job-role {
+  display: block;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.job-company {
+  display: block;
+  color: var(--color-text-muted);
+}
+
+.job-period {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+}
+
 /* === SKILLS === */
 .skill-group {
   margin-bottom: var(--space-sm);
