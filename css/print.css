@@ -70,6 +70,10 @@
     content: none;
   }
 
+  details:not([open]) {
+    display: none;
+  }
+
   .cv-footer {
     border-top: 1px solid #ccc;
   }
