@@ -57,7 +57,54 @@
   .card {
     box-shadow: none;
     border: 1px solid #ddd;
+    padding: var(--space-md);
     page-break-inside: avoid;
+  }
+
+  /* experience / education - linear layout instead of table (ATS-friendly) */
+  #experience .table-cv thead,
+  #education .table-cv thead {
+    display: none;
+  }
+
+  #experience .table-cv,
+  #experience .table-cv tbody,
+  #experience .table-cv tr,
+  #experience .table-cv td,
+  #education .table-cv,
+  #education .table-cv tbody,
+  #education .table-cv tr,
+  #education .table-cv td {
+    display: block;
+    width: 100%;
+  }
+
+  #experience .table-cv tbody tr,
+  #education .table-cv tbody tr {
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--color-border);
+    break-inside: avoid;
+  }
+
+  #experience .table-cv tbody tr:first-child,
+  #education .table-cv tbody tr:first-child {
+    padding-top: 0;
+  }
+
+  #experience .table-cv tbody tr:last-child,
+  #education .table-cv tbody tr:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  #experience .table-cv tbody td,
+  #education .table-cv tbody td {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  #experience .td-meta {
+    margin-bottom: var(--space-xs);
   }
 
   a[href]::after {
