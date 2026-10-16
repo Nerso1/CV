@@ -191,7 +191,12 @@
   border-bottom: none;
 }
 
-.table-cv tbody tr:hover td {
+.table-cv tbody td {
+  transition: background-color 0.2s ease;
+}
+
+.table-cv tbody tr:hover td,
+.table-cv tbody tr.is-related td {
   background-color: var(--color-page);
 }
 
@@ -257,6 +262,21 @@
   background-color: var(--color-border-alt);
   border-radius: var(--radius-sm);
   padding: var(--space-xs) var(--space-sm);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* .is-related - set from JS when a related element is hovered */
+.skill-badge:hover,
+.skill-badge.is-related {
+  color: var(--color-on-accent);
+  background-color: var(--color-accent);
+  transform: scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-badge {
+    transition: none;
+  }
 }
 
 /* === PORTFOLIO === */
@@ -264,7 +284,18 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: var(--space-xs);
+}
+
+.portfolio-item {
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  transition: background-color 0.2s ease;
+}
+
+.portfolio-item:hover,
+.portfolio-item.is-related {
+  background-color: var(--color-page);
 }
 
 .portfolio-item a {

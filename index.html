@@ -117,62 +117,62 @@
         <div class="skill-group">
           <h3 class="skill-group-label" data-i18n="skills.backend">Backend</h3>
           <ul class="skills-list">
-            <li class="skill-badge">C#</li>
-            <li class="skill-badge">.NET</li>
-            <li class="skill-badge">ASP.NET</li>
-            <li class="skill-badge">Entity Framework</li>
-            <li class="skill-badge">OData</li>
-            <li class="skill-badge">REST API</li>
+            <li class="skill-badge" data-skill="csharp">C#</li>
+            <li class="skill-badge" data-skill="dotnet">.NET</li>
+            <li class="skill-badge" data-skill="aspnet">ASP.NET</li>
+            <li class="skill-badge" data-skill="ef">Entity Framework</li>
+            <li class="skill-badge" data-skill="odata">OData</li>
+            <li class="skill-badge" data-skill="rest">REST API</li>
           </ul>
         </div>
 
         <div class="skill-group">
           <h3 class="skill-group-label" data-i18n="skills.tools">Tools</h3>
           <ul class="skills-list">
-            <li class="skill-badge">Visual Studio</li>
-            <li class="skill-badge">VS Code</li>
-            <li class="skill-badge">Git</li>
-            <li class="skill-badge">GitHub / GitLab</li>
-            <li class="skill-badge">Vault</li>
-            <li class="skill-badge">OpenTelemetry</li>
-            <li class="skill-badge">CI/CD</li>
+            <li class="skill-badge" data-skill="vs">Visual Studio</li>
+            <li class="skill-badge" data-skill="vscode">VS Code</li>
+            <li class="skill-badge" data-skill="git">Git</li>
+            <li class="skill-badge" data-skill="github-gitlab">GitHub / GitLab</li>
+            <li class="skill-badge" data-skill="vault">Vault</li>
+            <li class="skill-badge" data-skill="otel">OpenTelemetry</li>
+            <li class="skill-badge" data-skill="cicd">CI/CD</li>
           </ul>
         </div>
 
         <div class="skill-group">
           <h3 class="skill-group-label" data-i18n="skills.db">Databases</h3>
           <ul class="skills-list">
-            <li class="skill-badge">SQL Server</li>
-            <li class="skill-badge">T-SQL</li>
+            <li class="skill-badge" data-skill="sqlserver">SQL Server</li>
+            <li class="skill-badge" data-skill="tsql">T-SQL</li>
           </ul>
         </div>
 
         <div class="skill-group">
           <h3 class="skill-group-label" data-i18n="skills.testing">Testing</h3>
           <ul class="skills-list">
-            <li class="skill-badge">xUnit</li>
-            <li class="skill-badge">Moq</li>
+            <li class="skill-badge" data-skill="xunit">xUnit</li>
+            <li class="skill-badge" data-skill="moq">Moq</li>
           </ul>
         </div>
 
         <div class="skill-group">
           <h3 class="skill-group-label" data-i18n="skills.desktop">Desktop</h3>
           <ul class="skills-list">
-            <li class="skill-badge">WPF</li>
-            <li class="skill-badge">WinForms</li>
+            <li class="skill-badge" data-skill="wpf">WPF</li>
+            <li class="skill-badge" data-skill="winforms">WinForms</li>
           </ul>
         </div>
 
         <div class="skill-group">
           <h3 class="skill-group-label" data-i18n="skills.inprogress">In progress</h3>
           <ul class="skills-list">
-            <li class="skill-badge">Cloud computing</li>
-            <li class="skill-badge">Microsoft Azure</li>
-            <li class="skill-badge">Angular</li>
-            <li class="skill-badge">TypeScript</li>
+            <li class="skill-badge" data-skill="cloud">Cloud computing</li>
+            <li class="skill-badge" data-skill="azure">Microsoft Azure</li>
+            <li class="skill-badge" data-skill="angular">Angular</li>
+            <li class="skill-badge" data-skill="typescript">TypeScript</li>
             <!-- hidden for now
-            <li class="skill-badge">Nx</li>
-            <li class="skill-badge">RxJS</li>
+            <li class="skill-badge" data-skill="nx">Nx</li>
+            <li class="skill-badge" data-skill="rxjs">RxJS</li>
             -->
           </ul>
         </div>
@@ -202,7 +202,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr data-item="job-developer">
               <td class="td-meta">
                 <span class="job-role" data-i18n="exp.row1.role">Software Developer</span>
                 <span class="job-company">Comarch S.A.</span>
@@ -218,7 +218,7 @@
                 </ul>
               </td>
             </tr>
-            <tr>
+            <tr data-item="job-consultant">
               <td class="td-meta">
                 <span class="job-role" data-i18n="exp.row2.role">Technical Support Consultant</span>
                 <span class="job-company">Comarch S.A.</span>
@@ -247,7 +247,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr data-item="edu-it">
               <td data-i18n="edu.row1.institution"></td>
               <td data-i18n="edu.row1.field"></td>
               <td>2014 - 2019</td>
@@ -268,7 +268,7 @@
             <p data-i18n="portfolio.item1.desc">Lightweight utility for managing Comarch ERP XL installations</p>
           </li>
           -->
-          <li class="portfolio-item">
+          <li class="portfolio-item" data-item="portfolio-microerp">
             <a href="https://github.com/Nerso1/MicroERP" rel="noopener noreferrer">
               <i class="fa-brands fa-github" aria-hidden="true"></i>
               <strong>MicroERP</strong>
@@ -381,6 +381,8 @@
   <script src="js/i18n.js"></script>
   <script src="js/darkmode.js"></script>
   <script src="js/print.js"></script>
+  <script src="js/relations.js"></script>
+  <script src="js/highlight.js"></script>
 
 </body>
 </html>
