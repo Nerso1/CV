@@ -13,6 +13,7 @@
   /* === ACCENT === */
   --color-accent:       #0a6eb4;
   --color-accent-hover: #00b4d8;
+  --color-on-accent:    #ffffff;   /* tekst na tle accent */
 
   /* === BORDERS === */
   --color-border:       #d1dce8;

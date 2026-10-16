@@ -9,6 +9,7 @@
   --color-heading:      #90e0ef;
   --color-accent:       #00b4d8;
   --color-accent-hover: #caf0f8;
+  --color-on-accent:    #0a0a14;
   --color-border:       #2a2a4a;
   --color-border-alt:   #3a4a7a;
   --shadow-card:  0 2px 8px rgba(0, 0, 0, 0.40);
@@ -27,6 +28,7 @@
     --color-heading:      #90e0ef;
     --color-accent:       #00b4d8;
     --color-accent-hover: #caf0f8;
+    --color-on-accent:    #0a0a14;
     --color-border:       #2a2a4a;
     --color-border-alt:   #3a4a7a;
     --shadow-card:  0 2px 8px rgba(0, 0, 0, 0.40);
