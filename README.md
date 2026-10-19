@@ -1,5 +1,7 @@
 # Dominik Ciastoń - CV
 
+**Live:** https://nerso1.github.io/CV/
+
 Personal CV published as a static website hosted on GitHub Pages.
 Built with vanilla HTML, CSS, and JavaScript - no frameworks.
 
